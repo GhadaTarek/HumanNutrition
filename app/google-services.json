@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "573452271177",
+    "firebase_url": "https://humannutrition-5088a.firebaseio.com",
+    "project_id": "humannutrition-5088a",
+    "storage_bucket": "humannutrition-5088a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573452271177:android:5d7ac61729f7b5bd",
+        "android_client_info": {
+          "package_name": "com.amg.humannutrition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573452271177-lvgk6ss3rls7gbvdoidjhgdhfidml178.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amg.humannutrition",
+            "certificate_hash": "03038f530467b60ca40ffbee68f971fa1ece6be1"
+          }
+        },
+        {
+          "client_id": "573452271177-jbb0lqnubbbqqo3f9n36gtr1ja5hovk2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3CXWYZZasWe-tw1OExrYVNT01QZ4USQk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573452271177-jbb0lqnubbbqqo3f9n36gtr1ja5hovk2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

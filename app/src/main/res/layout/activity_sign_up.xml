@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context="com.amg.humannutrition.Activity.SignUpActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ConstraintLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/action_register"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.github.florent37.materialtextfield.MaterialTextField
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mtf_image="@drawable/ic_person_24dp"
+                        app:mtf_labelColor="@color/colorPrimaryDark"
+                        app:mtf_openKeyboardOnFocus="true">
+
+                        <EditText
+                            android:id="@+id/signup_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/user_name"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAccent"
+                            android:textColorHint="@color/colorAccent" />
+
+                    </com.github.florent37.materialtextfield.MaterialTextField>
+
+                    <com.github.florent37.materialtextfield.MaterialTextField
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mtf_image="@drawable/ic_email_24dp"
+                        app:mtf_labelColor="@color/colorPrimaryDark"
+                        app:mtf_openKeyboardOnFocus="true">
+
+                        <EditText
+                            android:id="@+id/signup_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/prompt_email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAccent"
+                            android:textColorHint="@color/colorAccent" />
+
+                    </com.github.florent37.materialtextfield.MaterialTextField>
+
+                    <com.github.florent37.materialtextfield.MaterialTextField
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mtf_image="@drawable/ic_lock_24dp"
+                        app:mtf_labelColor="@color/colorPrimaryDark"
+                        app:mtf_openKeyboardOnFocus="true">
+
+                        <EditText
+                            android:id="@+id/signup_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAccent"
+                            android:textColorHint="@color/colorAccent" />
+
+                    </com.github.florent37.materialtextfield.MaterialTextField>
+
+                    <com.github.florent37.materialtextfield.MaterialTextField
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mtf_image="@drawable/ic_lock_24dp"
+                        app:mtf_labelColor="@color/colorPrimaryDark"
+                        app:mtf_openKeyboardOnFocus="true">
+
+                        <EditText
+                            android:id="@+id/signup_password2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/verify_password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAccent"
+                            android:textColorHint="@color/colorAccent" />
+
+                    </com.github.florent37.materialtextfield.MaterialTextField>
+
+                    <com.github.florent37.materialtextfield.MaterialTextField
+                        android:id="@+id/signup_Gender_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mtf_image="@drawable/ic_person_24dp"
+                        app:mtf_labelColor="@color/colorPrimaryDark">
+
+                        <EditText
+                            android:id="@+id/signup_Gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="12dp"
+                            android:enabled="false"
+                            android:hint="@string/gender"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAccent"
+                            android:textColorHint="@color/colorAccent" />
+                    </com.github.florent37.materialtextfield.MaterialTextField>
+
+                    <com.github.florent37.materialtextfield.MaterialTextField
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mtf_image="@drawable/ic_person_24dp"
+                        app:mtf_labelColor="@color/colorPrimaryDark"
+                        app:mtf_openKeyboardOnFocus="true">
+
+                        <EditText
+                            android:id="@+id/signup_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="12dp"
+                            android:hint="@string/age"
+                            android:inputType="numberSigned"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAccent"
+                            android:textColorHint="@color/colorAccent" />
+                    </com.github.florent37.materialtextfield.MaterialTextField>
+
+                    <com.github.florent37.materialtextfield.MaterialTextField
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:mtf_image="@drawable/ic_person_24dp"
+                        app:mtf_labelColor="@color/colorPrimaryDark"
+                        app:mtf_openKeyboardOnFocus="true">
+
+                        <EditText
+                            android:id="@+id/signup_height"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="12dp"
+                            android:hint="@string/height"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorAccent"
+                            android:textColorHint="@color/colorAccent" />
+                    </com.github.florent37.materialtextfield.MaterialTextField>
+
+                    <com.github.florent37.materialtextfield.MaterialTextField
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="100dp"
+                        app:mtf_image="@drawable/ic_person_24dp"
+                        app:mtf_labelColor="@color/colorPrimaryDark"
+                        app:mtf_openKeyboardOnFocus="true"
+                        >
+
+                        <EditText
+                            android:id="@+id/signup_weight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="12dp"
+                            android:hint="@string/weight"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+
+                            android:singleLine="true"
+                            android:textColor="@color/colorAccent"
+                            android:textColorHint="@color/colorAccent" />
+                    </com.github.florent37.materialtextfield.MaterialTextField>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+<LinearLayout
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    app:layout_constraintBottom_toBottomOf="parent"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+            <CheckBox
+
+                android:id="@+id/chkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="16dp"
+                android:text="@string/i_agree_to_the_terms_of_service"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toTopOf="@+id/btn_signUp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:id="@+id/btn_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chkBox1"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/action_register"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:pb_colorComplete="@color/colorGreen"
+                app:pb_colorError="@color/red_error"
+                app:pb_colorNormal="@color/colorPrimaryDark"
+                app:pb_colorPressed="@color/blue_pressed"
+                app:pb_colorProgress="@color/colorPrimaryDark"
+                app:pb_textComplete="Success"
+                app:pb_textError="Error"
+                app:pb_textProgress="Loading" />
+</LinearLayout>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="60dp"
+                android:contentDescription="@string/signup_notch"
+                android:rotation="45"
+                android:src="@drawable/square"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

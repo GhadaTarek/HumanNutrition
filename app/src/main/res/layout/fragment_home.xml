@@ -1,0 +1,505 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    tools:context="com.amg.humannutrition.Fragment.HomeFragment">
+
+        <TextView
+            android:id="@+id/infoHome_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@color/colorGrey"
+            android:text="This is your Health Info and Needs"
+            android:textSize="20sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bmiHome_card"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoHome_text">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/ic_accessibility_24dp"
+            android:background="@drawable/circle"
+            />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="BMI : "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/bmiFreeHome_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/bmiTypeHome_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="10dp"
+                android:gravity="center"
+                android:text="Weight"
+                android:textColor="@color/colorGrey"
+                android:textSize="20sp" />
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/caloriesHome_card"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"        app:layout_constraintTop_toBottomOf="@+id/bmiHome_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|top"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_whatshot_24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:text="Calories :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/caloreisFreeHome_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="16dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="16dp"
+
+                        android:paddingStart="16dp"
+                        android:text="All \nCalories : "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/caloreisAllHome_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:paddingBottom="16dp"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="16dp"
+
+                        android:paddingStart="16dp"
+                        android:text="Burned\nCalories : "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/caloreisBurnedHome_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:paddingBottom="16dp"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/carbsHome_card"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caloriesHome_card">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|top"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_local_pizza_black_24dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Carbs :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/carbsFreeHome_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="6dp"
+
+                        android:paddingBottom="6dp"
+                        android:text="All \nCarbs: "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/carbsAllHome_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="6dp"
+                        android:layout_marginTop="20dp"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+
+                        android:paddingBottom="16dp"
+                        android:text="Burned \nCarbs : "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/carbsBurnedHome_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="16dp"
+                        android:layout_marginTop="20dp"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/proteinHome_card"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carbsHome_card">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_fitness_center_black_24dp"
+                android:background="@drawable/circle"
+                android:layout_gravity="center|top"
+
+                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="16dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="Protein :"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25sp" />
+                    <TextView
+                        android:id="@+id/proteinFreeHome_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="0"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+
+                            android:paddingBottom="16dp"
+                            android:text="All \nProtein: "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/proteinAllHome_text"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="16dp"
+                            android:layout_marginTop="20dp"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="16dp"
+                            android:paddingBottom="16dp"
+                            android:text="Burned \nProtein : "
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:id="@+id/proteinBurnedHome_text"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="16dp"
+                            android:layout_marginTop="20dp"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fatHome_card"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proteinHome_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_local_dining_black_24dp"
+                android:background="@drawable/circle"
+                android:layout_gravity="center|top"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Fat :"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/fatFreeHome_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="32sp" />
+
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+
+                        android:paddingBottom="16dp"
+                        android:text="All \nFat: "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/fatAllHome_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="16dp"
+                        android:layout_marginTop="20dp"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:paddingBottom="16dp"
+                        android:text="Burned \nFat : "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/fatBurnedHome_text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="16dp"
+                        android:layout_marginTop="20dp"
+                        android:text="0"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
